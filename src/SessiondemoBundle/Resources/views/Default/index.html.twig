@@ -1,0 +1,11 @@
+{% extends("base.html.twig") %}
+
+{% block body %}
+    <h1>Hello {{ user.name }}</h1>
+    <div id="messages">
+        {% include('@Sessiondemo/Default/messageList.html.twig') %}
+    </div>
+    <div>
+        {{ form(form) }}
+    </div>
+{% endblock %}
